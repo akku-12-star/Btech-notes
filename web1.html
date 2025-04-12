@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Design</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #fce4ec);
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header, footer {
+      background: linear-gradient(to right, #004080, #0066cc);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
+      animation: fadeDown 1s ease-out;
+    }
+
+    header p {
+      animation: fadeUp 1s ease-out 0.5s;
+      animation-fill-mode: both;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .module {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transform: translateX(-50px);
+      opacity: 0;
+      animation: slideIn 0.8s forwards ease-in-out;
+    }
+
+    .module:nth-child(odd) {
+      animation-delay: 0.3s;
+    }
+
+    .module:nth-child(even) {
+      animation-delay: 0.6s;
+    }
+
+    .module:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease-in-out;
+    }
+
+    h2 {
+      color: #0066cc;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #ff4081;
+      margin-top: 6px;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+
+    ul li:hover {
+      color: #d500f9;
+      transform: translateX(5px);
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      animation: fadeUp 1s ease-out;
+    }
+
+    /* Animations */
+    @keyframes slideIn {
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web Design</h1>
+    <p>KTU 2024 Detailed Syllabus</p>
+  </header>
+
+  <div class="container">
+    <section class="module">
+      <h2>Module 1</h2>
+      <ul>
+        <li>Introduction to Internet: Internet protocol - Overview of TCP/IP and its services - URLs - Domain names - Protocols - HTTP, HTTPS, FTP, Telnet, Email, MIME.</li>
+        <li>World Wide Web (WWW): Web browser and Web server - Web publishing - Web hosting - Types of hosting - Static and Dynamic websites - Search Engines - Concepts of Web 2.0.</li>
+        <li>HTML: HTML5 tags and formatting - Lists - Tables - Forms - Input types - Frames - Embedded elements - Audio and Video tags.</li>
+        <li>CSS: Inline, Internal and External CSS - Classes and IDs - Font - Color - Margins - Padding - Background - Border - Box model - Positioning - Floating - Navigation bar - Layout - Grid and Flexbox.</li>
+      </ul>
+    </section>
+
+    <section class="module">
+      <h2>Module 2</h2>
+      <ul>
+        <li>CSS3: Rounded corners - Shadow - Gradients - Transitions - Animations - Transform - Responsive Web Design - Media Queries.</li>
+        <li>Bootstrap: Introduction - Containers - Grid system - Typography - Colors - Tables - Images - Jumbotron - Alerts - Buttons - Badges - Progress bars - Spinners - Pagination - List group - Cards - Dropdowns - Collapse - Navbar - Forms - Carousel - Modal.</li>
+        <li>Introduction to UI design - Principles of good UI design - Understanding color theory - Typography - Layout and alignment - Accessibility.</li>
+      </ul>
+    </section>
+
+    <section class="module">
+      <h2>Module 3</h2>
+      <ul>
+        <li>JavaScript: Introduction - Syntax - Variables - Operators - Functions - Events - Conditionals - Loops - Arrays - Objects - Strings - Numbers - Dates - Math - RegExp.</li>
+        <li>DOM manipulation - Changing HTML and CSS - Adding and removing elements - Handling events.</li>
+        <li>Form validation - Built-in validation methods - Creating custom validation.</li>
+        <li>jQuery: Introduction - Syntax - Selectors - Events - Effects - Callback functions - DOM manipulation.</li>
+      </ul>
+    </section>
+
+    <section class="module">
+      <h2>Module 4</h2>
+      <ul>
+        <li>Web Hosting: Domain registration - Web hosting services - DNS - Hosting a website using cPanel - FTP and FileZilla.</li>
+        <li>SEO: Introduction - Importance - On-page and Off-page SEO techniques.</li>
+        <li>Web Accessibility: Principles and guidelines - ARIA roles - Making sites accessible.</li>
+        <li>Project Work: Creating a complete website using HTML, CSS, Bootstrap and JavaScript/jQuery - Hosting the site online.</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>KTU Web Design | Page created by Aqoob</p>
+  </footer>
+</body>
+</html>

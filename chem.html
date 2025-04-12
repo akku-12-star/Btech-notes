@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chemistry</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e0f7fa, #fffde7);
+      color: #333;
+      animation: fadeInBody 1s ease-in;
+      overflow-x: hidden;
+    }
+
+    header, footer {
+      background: linear-gradient(to right, #004080, #0077b6);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      animation: slideDown 1s ease forwards;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      animation: popIn 1s ease-out;
+    }
+
+    h2 {
+      color: #0077b6;
+      margin-top: 0;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    .container {
+      padding: 2rem;
+    }
+
+    .module {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideInUp 0.8s ease forwards;
+      animation-delay: var(--delay);
+    }
+
+    .module:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    li:hover {
+      color: #d84315;
+      transform: translateX(5px);
+    }
+
+    footer {
+      font-size: 0.9rem;
+      margin-top: 2rem;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    /* Animations */
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideInUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Delay for each module */
+    .module:nth-child(1) { --delay: 0.3s; }
+    .module:nth-child(2) { --delay: 0.6s; }
+    .module:nth-child(3) { --delay: 0.9s; }
+    .module:nth-child(4) { --delay: 1.2s; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chemistry</h1>
+    <p>Module-wise Syllabus Breakdown</p>
+  </header>
+
+  <div class="container">
+    <section class="module">
+      <h2>Module 1</h2>
+      <ul>
+        <li>Atomic and molecular structure</li>
+        <li>Molecular orbitals of diatomic molecules</li>
+        <li>Crystal field theory – Crystal field splitting in octahedral and tetrahedral complexes</li>
+        <li>Band structure of solids and the role of doping on band structures</li>
+      </ul>
+    </section>
+
+    <section class="module">
+      <h2>Module 2</h2>
+      <ul>
+        <li>Water Technology – Hardness of water and its estimation by EDTA method</li>
+        <li>Boiler feed water – boiler problems – priming and foaming, scale and sludge, caustic embrittlement</li>
+        <li>Water treatment – Internal treatment and external treatment</li>
+        <li>Desalination of brackish water – Reverse osmosis, electrodialysis</li>
+      </ul>
+    </section>
+
+    <section class="module">
+      <h2>Module 3</h2>
+      <ul>
+        <li>Electrochemistry – Galvanic cells, Electrode potential, Electrochemical series</li>
+        <li>Nernst equation – Reference electrodes – SHE, Calomel and Glass electrode</li>
+        <li>Battery Technology – primary and secondary cells</li>
+        <li>Fuel cells – H2-O2 fuel cell, Li-ion cell</li>
+        <li>Corrosion – types, mechanisms and methods of prevention</li>
+      </ul>
+    </section>
+
+    <section class="module">
+      <h2>Module 4</h2>
+      <ul>
+        <li>Spectroscopy and analytical techniques</li>
+        <li>Beer–Lambert’s law – UV–Visible spectroscopy and its applications</li>
+        <li>Infrared spectroscopy and its applications</li>
+        <li>Chromatography – principle and applications of paper chromatography and thin layer chromatography</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>KTU Chemistry | Page created by Aqoob</p>
+  </footer>
+</body>
+</html>

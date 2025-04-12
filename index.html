@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KTU Study Helper</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e6ecf3, #f9f9fb);
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header, footer {
+      background: linear-gradient(to right, #003366, #0059b3);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav {
+      background: #0073e6;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffe066;
+      transform: scale(1.05);
+    }
+
+    .container {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    section {
+      animation: fadeUp 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .box {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 1rem;
+    }
+
+    .link-button {
+      display: inline-block;
+      font-weight: bold;
+      color: #0073e6;
+      text-decoration: none;
+      padding: 12px 20px;
+      border: 2px solid #0073e6;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+    }
+
+    .link-button:hover {
+      background: #0073e6;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    footer {
+      font-size: 0.9rem;
+      background: #00264d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KTU Study Helper</h1>
+    <p>Organized study resources for your semester</p>
+  </header>
+
+  <nav>
+    <a href="#discrete-maths">Discrete Maths</a>
+    <a href="#maths-is">Maths for IS</a>
+    <a href="#c-programming">C Programming</a>
+    <a href="#web-design">Web Design</a>
+    <a href="#chemistry">Chemistry</a>
+    <a href="#ipr">IPR</a>
+  </nav>
+
+  <div class="container">
+    <section id="discrete-maths">
+      <h2>Discrete Mathematics</h2>
+      <div class="box">
+        <a class="link-button" href="content://com.android.externalstorage.documents/tree/primary%3ADownload%2FHtml%2FClass/document/primary%3ADownload%2FHtml%2FClass%2Fdiscrete1.html" target="_blank">View Syllabus</a>
+      </div>
+      <div class="box">
+        <a class="link-button" href="#" target="_blank">Watch YouTube Classes</a>
+      </div>
+    </section>
+
+    <section id="maths-is">
+      <h2>Maths for IS</h2>
+      <div class="box">
+        <a class="link-button" href="#" target="_blank">View Syllabus</a>
+      </div>
+      <div class="box">
+        <a class="link-button" href="#" target="_blank">Watch YouTube Classes</a>
+      </div>
+    </section>
+
+    <section id="c-programming">
+      <h2>C Programming</h2>
+      <div class="box">
+        <a class="link-button" href="https://youtube.com/playlist?list=PLZGOkwzhcgeR7gMDHtOm1g_J9qt8ZN7jy&si=d-GjGpIcQo1EHOA1"target="_blank">Watch YouTube Classes</a>
+      </div>
+      <div class="box">
+        <a class="link-button" href="#" target="_blank">View Syllabus</a>
+      </div>
+    </section>
+
+    <section id="web-design">
+      <h2>Web Design</h2>
+      <div class="box">
+        <a class="link-button" href="content://com.android.externalstorage.documents/tree/primary%3ADownload%2FHtml%2FClass/document/primary%3ADownload%2FHtml%2FClass%2Fweb1.html" target="_blank">View Syllabus</a>
+      </div>
+      <div class="box">
+        <a class="link-button" href="https://youtube.com/playlist?list=PLKSHzSX9jGbqZkUmUC5Q9XyilOMGjhZb8&si=SJRnANUGLf0I_GHb" target="_blank">Watch YouTube Classes</a>
+      </div>
+    </section>
+
+    <section id="chemistry">
+      <h2>Chemistry</h2>
+      <div class="box">
+        <a class="link-button" href="content://com.android.externalstorage.documents/document/primary%3ADownload%2FHtml%2FClass%2Fchem.html"  target="_blank">View Syllabus</a>
+      </div>
+      <div class="box">
+        <a class="link-button" href="#" target="_blank">Watch YouTube Classes</a>
+      </div>
+    </section>
+
+    <section id="ipr">
+      <h2>IPR (Intellectual Property Rights)</h2>
+      <div class="box">
+        <a class="link-button" href="#" target="_blank">View Syllabus</a>
+      </div>
+      <div class="box">
+        <a class="link-button" href="#" target="_blank">Watch YouTube Classes</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Made by Students of Btech | All rights reserved</p>
+  </footer>
+</body>
+</html>
